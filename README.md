@@ -7,13 +7,8 @@ PagerDuty-Dashing
 
 A [Dashing][dashing] dashboard for PagerDuty Services!
 
-* Show the number of triggered and acknowledged incidents using the [hotness widget][hotness].
-* Display who's on-call for a particular PagerDuty schedule.
+* Show the number of triggered incidents using the [hotness widget][hotness].
 
-
-Sample
-=======
-![sample](https://f36b09034ab1a72dbb54-bd0fd07e24ed988eda39807e960a82e7.ssl.cf1.rackcdn.com/TinyGrab%20Screen%20Shot%2011-2-14%2012.33.18%20AM.png.jpg)
 
 Getting Started
 ===============
@@ -25,12 +20,12 @@ The easiest way to get started is to use Heroku button above to launch your dash
 | PAGERDUTY_URL | https://yoursubdomain.pagerduty.com |
 | PAGERDUTY_APIKEY | Your api key (this can be a read only key) |
 | PAGERDUTY_SERVICES | {"services": { "staging": "ABC1234","preprod": "QAZ4567","production": "EDC4321"}} |
-| PAGERDUTY_SCHEDULES | {"schedules": { "oncall": "ABC1234","firefighter": "QAZ4567"}} | 
+| PAGERDUTY_SCHEDULES | {"schedules": { "oncall": "PVW1X30","firefighter": "PSY8CSC"}} | 
 
 FAQ
 ====
 ### Where can I see what the IDs are for my services/schedules?
-Clicking on a Service/Schedule in PagerDuty will show you the ID in the URL.
+Clicking on a Service/Schedule in PagerDuty will show you the ID in the URL. On that note you will want to adjust the .erb files to match your environment.
 
 ### Why do I need to format my Services/Schedules like that?
 The Services/Schedules need to be in JSON format.  In order for Heroku to accept them, they need to contain no line breaks.

@@ -4,6 +4,7 @@ require 'json'
 url = ENV['PAGERDUTY_URL']
 api_key = ENV['PAGERDUTY_APIKEY']
 env_schedules = ENV['PAGERDUTY_SCHEDULES']
+
 parsed_data = JSON.parse(env_schedules)
 
 schedules = {}
