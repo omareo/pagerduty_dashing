@@ -1,9 +1,9 @@
 PagerDuty-Dashing
 =================
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/thegreenrobot/pagerduty_dashing)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/omareo/pagerduty_dashing)
 
-[![Build Status](https://travis-ci.org/thegreenrobot/pagerduty_dashing.svg?branch=master)](https://travis-ci.org/thegreenrobot/pagerduty_dashing)
+
 
 A [Dashing][dashing] dashboard for PagerDuty Services!
 
