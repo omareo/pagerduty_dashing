@@ -1,7 +1,7 @@
 {
     "name": "PagerDuty Dashing",
-    "description": "A simple Dashing dashboard for PagerDuty Incidents and On-call",
-    "repository": "https://github.com/thegreenrobot/pagerduty_dashing",
+    "description": "A simple Dashing dashboard for PagerDuty Incidents",
+    "repository": "https://github.com/omareo/pagerduty_dashing",
     "keywords": [
         "dashing pagerduty"
     ],
@@ -10,6 +10,5 @@
         "PAGERDUTY_URL": "insert_your_pagerduty_url_here",
         "PAGERDUTY_APIKEY": "insert_your_pagerduty_api_key_here",
         "PAGERDUTY_SERVICES": "insert_your_services_here_in_json_format",
-        "PAGERDUTY_SCHEDULES": "insert_your_schedules_here_in_json_format"
     }
 }
