@@ -29,9 +29,8 @@ SCHEDULER.every '30s' do
     json = JSON.parse(response.body)
 
     triggered = json['service']['incident_counts']['triggered']
-    acknowledged = json['service']['incident_counts']['acknowledged']
-
     send_event("#{key}-triggered", value: triggered)
-    send_event("#{key}-acknowledged", value: acknowledged)
+
+  
   end
 end
