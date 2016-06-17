@@ -7,8 +7,8 @@
     ],
     "success_url": "/pagerduty",
     "env": {
-        "PAGERDUTY_URL": "https://merakiit.pagerduty.com/",
-        "PAGERDUTY_APIKEY": "xEBCCAsRv_8rBwy2chWV",
-        "PAGERDUTY_SERVICES": "{"services": { "LON7-Cisco-BD-NetBotz": "PSBU0DO","LON7-Meraki-BD-NetBotz": "PLS1ROG","LON7-Meraki-BD-UPS": "PHPMX4L","SFO-MDF": "PD02TPX","SFO-IDF-3_1": "PQN9OL3","SFO-IDF-3_2": "PB56R26","SFO-IDF-4_1": "PJ2NYVL","SFO-IDF-4_2": "P0ICR3Z","SFO-IDF-5_2": "PTVTIFA","SFO-IDF-5_3": "PDS3Y0W","SFO-Servers": "P9LIPBI","Shoretel": "P9LMFOR","SYD-MDF": "PNALJ0W"}}",
+        "PAGERDUTY_URL": "https://url.pagerduty.com/",
+        "PAGERDUTY_APIKEY": "api-key-goes-here",
+        "PAGERDUTY_SERVICES": "json formatted list goes here",
     }
 }

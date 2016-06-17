@@ -6,7 +6,6 @@ api_key = ENV['PAGERDUTY_APIKEY']
 env_services = ENV['PAGERDUTY_SERVICES']
 
 parsed_data = JSON.parse(env_services)
-
 services = {}
 
 parsed_data['services'].each do |key, value|
@@ -30,7 +29,5 @@ SCHEDULER.every '30s' do
 
     triggered = json['service']['incident_counts']['triggered']
     send_event("#{key}-triggered", value: triggered)
-
-  
   end
 end
