@@ -1,7 +1,7 @@
 PagerDuty-Dashing
 =================
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/omareo/pagerduty_dashing)
+
 
 
 
@@ -13,7 +13,7 @@ A [Dashing][dashing] dashboard for PagerDuty Services!
 Getting Started
 ===============
 
-The easiest way to get started is to use Heroku button above to launch your dashboard. You will need to fill out the following environment variables in Heroku so your Dashing dashboard can communicate to the PagerDuty API.
+Fill out the following environment variables in Heroku so your Dashing dashboard can communicate to the PagerDuty API.
 
 | Environment Variable | Example |
 | :----------------- |:-----------------|
