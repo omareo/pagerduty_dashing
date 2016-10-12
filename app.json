@@ -10,5 +10,8 @@
         "PAGERDUTY_URL": "https://url.pagerduty.com/",
         "PAGERDUTY_APIKEY": "api-key-goes-here",
         "PAGERDUTY_SERVICES": "json formatted list goes here",
+	"ZENDESK_URL": "https://url.zendesk.com",
+	"ZENDESK_AUTH": "Basic Auth Header info goes here",
+	"ZENDESK_VIEWS": "json formatted list of views", 
     }
 }
