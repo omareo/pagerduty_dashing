@@ -5,7 +5,7 @@
     "keywords": [
         "dashing pagerduty"
     ],
-    "success_url": "/pagerduty",
+    "success_url": "/allthethings",
     "env": {
         "PAGERDUTY_URL": "https://url.pagerduty.com/",
         "PAGERDUTY_APIKEY": "api-key-goes-here",
