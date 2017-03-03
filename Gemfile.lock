@@ -29,6 +29,7 @@ GEM
     hashie (3.4.6)
     hike (1.2.3)
     inflection (1.0.0)
+    logger (1.2.8)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -94,8 +95,9 @@ DEPENDENCIES
   chronic
   dashing
   faraday
+  logger
   rubocop (~> 0.32.0)
   zendesk_api (~> 1.14)
 
 BUNDLED WITH
-   1.13.2
+   1.14.5
