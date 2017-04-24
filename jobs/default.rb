@@ -28,7 +28,7 @@ end
 
 zendesk_triggered = 0
 
-SCHEDULER.every '15s' do
+SCHEDULER.every '60s' do
   services.each do |key, value|
     conn = Faraday.new(url: "#{pagerduty_url}") do |faraday|
       faraday.request :url_encoded
