@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'logger'
 gem 'dashing'
 gem 'faraday'
 gem 'chronic'

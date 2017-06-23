@@ -43,16 +43,32 @@ SCHEDULER.every '60s' do
     triggered = json['service']['incident_counts']['triggered']
     send_event("#{key}-triggered", value: triggered)
   end
-
+#ZENDESK INTEGRATION
+logger = Logger.new(STDOUT)
+logger.debug "Start of log"
   views.each do |key, value|
 	con = Faraday.new	
   		res = con.get do | req|
 		req.url "#{zendesk_url}/api/v2/views/#{value}/count.json" 
 		req.headers['Authorization'] = "#{zendesk_auth}"
   	end
-
 	zendesk_json = JSON.parse(res.body)
   	zendesk_triggered = zendesk_json['view_count']['value']
   	send_event("#{key}-triggered", value: zendesk_triggered)
   end
+
+shoretel_url = ENV['SHORETEL_URL']
+
+#SHORETEL INTEGRATION
+
+   con = Faraday.new
+   res = con.get do | req|
+      req.url "#{shoretel_url}"
+   end
+   shoretel_json = JSON.parse(res.body)
+   shoretel_json.each do |pri, pridata|
+      logger.debug pri
+      shoretel_triggered = pridata['percent'] 
+      send_event("#{pri}-triggered", value: shoretel_triggered)
+   end
 end
